@@ -34,7 +34,7 @@ async def receive_webhook(payload: WebhookPayload):
             "event_type": payload.event_type,
             "source": payload.source,
             "data": payload.data,
-            "timestamp": payload.timestamp.isoformat() if payload.timestamp else None,
+            "timestamp": payload.timestamp.isoformat(),
             "correlation_id": payload.correlation_id
         }
         
